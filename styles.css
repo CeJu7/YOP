@@ -101,3 +101,379 @@ p {
     border-radius: 10px;
     width: 300px;
 }
+
+/* Sección Acerca de Mí */
+#acerca {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.acerca-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    text-align: left;
+}
+
+.acerca-texto p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.acerca-datos {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.acerca-datos h3 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.acerca-datos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.acerca-datos li {
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Sección Experiencia */
+#experiencia {
+    padding: 80px 20px;
+}
+
+.experiencia-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experiencia-item {
+    display: flex;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.experiencia-item:hover {
+    transform: translateY(-5px);
+}
+
+.experiencia-fecha {
+    background: linear-gradient(135deg, orange, #ff6b35);
+    color: white;
+    padding: 30px 20px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 700;
+    font-size: 18px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiencia-contenido {
+    padding: 30px;
+    text-align: left;
+    flex: 1;
+}
+
+.experiencia-contenido h3 {
+    color: orange;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.experiencia-contenido h4 {
+    color: lightblue;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.experiencia-contenido p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.experiencia-contenido ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experiencia-contenido li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.experiencia-contenido li:before {
+    content: "▸";
+    color: orange;
+    position: absolute;
+    left: 0;
+}
+
+/* Sección Proyectos */
+#proyectos {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.proyectos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.proyecto-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.proyecto-imagen {
+    height: 200px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-img {
+    font-size: 60px;
+    opacity: 0.8;
+}
+
+.proyecto-contenido {
+    padding: 25px;
+    text-align: left;
+}
+
+.proyecto-contenido h3 {
+    color: orange;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.proyecto-contenido p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.proyecto-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: rgba(255, 165, 0, 0.2);
+    color: orange;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+/* Sección Contacto */
+#contacto {
+    padding: 80px 20px;
+}
+
+.contacto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contacto-info h3 {
+    color: orange;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.contacto-info p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.contacto-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.contacto-item .icon {
+    font-size: 24px;
+    min-width: 40px;
+}
+
+.contacto-item h4 {
+    color: lightblue;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contacto-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Formulario de Contacto */
+.contacto-formulario {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.contacto-formulario h3 {
+    color: orange;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    color: lightblue;
+    font-weight: 500;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+}
+
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-enviar {
+    background: linear-gradient(135deg, orange, #ff6b35);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 165, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .acerca-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .experiencia-item {
+        flex-direction: column;
+    }
+    
+    .experiencia-fecha {
+        writing-mode: horizontal-tb;
+        padding: 15px;
+        min-width: auto;
+    }
+    
+    .contacto-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .proyectos-container {
+        grid-template-columns: 1fr;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .yo {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    
+    .coffee {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .habilidades-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .habilidad {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .contacto-formulario {
+        padding: 20px;
+    }
+}
